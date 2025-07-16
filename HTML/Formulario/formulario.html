@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Preencha o formulario de satisfação</h1>
+    <form action="destino-banco-dados">
+        <p>    
+            <label for="nome">Nome completo</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+        </p>
+        <p>    
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" required>
+        </p>
+        <p>    
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" placeholder="Telefone" required>
+        </p>
+            <label for="resposta-1">Você gostou do nosso doce de batata doce?</label><br>
+
+            <input type="radio" name="resposta" id="resposta-nao">
+            <label for="sim">Sim</label>
+
+            <input type="radio" name="resposta" id="resposta-sim">
+            <label for="não">Não</label>
+            
+        <p>
+            <label for="resposta-2">Você compraria novamente o nosso doce de batata doce?</label><br>
+
+            <input type="radio" name="resposta2" id="resposta-resposta-nao">
+            <label for="sim">Sim</label>
+
+            <input type="radio" name="resposta2" id="resposta-sim">
+            <label for="não">Não</label>
+        </p>
+
+        <p>
+            <label for="resposta-3"> Em qual cidade você comprou o nosso doce?</label>
+            <select name="" id="">
+                <option value="">Água Doce do Maranhão (MA)</option>
+                <option value="">Rio Bananal (ES)</option>
+                <option value="">Laranja Paulista (SP)</option>
+            </select>
+        </p>
+        <p>
+            
+            <input type="checkbox" name="permissao" id="permissao" required>
+            <label for="">Você permite o envio das informaçoes para o nosso banco de dados?</label><br>
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+</body>
+</html>
