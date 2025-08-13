@@ -11,3 +11,52 @@ html {
     color: black;
 }
 
+/*
+Atividades Abaixo
+- Exercícios - Estilização textual
+1. Aspectos gerais. Aplique os seguintes estilos na estrutura geral da página.
+a. Defina um tamanho fixo para a página inteira
+b. Defina uma fonte do tipo sans-serif para a página inteira
+c. Indente os parágrafos em 1em
+
+2. Títulos. Alinhe todos os títulos para o centro ou a direita.
+a. Defina o tamanho do h1 em 1.8rem
+b. Defina o tamanho do h2 em 1.4rem
+c. Defina o tamanho do h3 em 1.2rem
+
+3. Seções de resumo e principal. Localize os elementos que representam a seção
+de resumo e principal da página, e aplique nelas:
+a. Alinhamento a direita ou centralizado para a seção de resumo.
+b. Espaçamento entre as linhas de 1.5 para os parágrafos da seção principal.
+
+4. Abreviaturas. Customize todos as abreviaturas para que a fonte seja carregada
+em small-caps .
+*/
+
+html {
+    font-size: 16px; /* Tamanho fixo para a página */
+    font-family: Arial, sans-serif; /* Fonte sans-serif */
+    text-indent: 1em; /* Indentação dos parágrafos */    
+}
+
+h1{
+    font-size: 1.8rem; /* Tamanho do h1 */
+}
+
+h2{
+    font-size: 1.4rem; /* Tamanho do h2 */
+}
+h3{
+    font-size: 1.2rem; /* Tamanho do h3 */
+}
+
+.summary {
+    text-align: right; /* Alinhamento centralizado para a seção de resumo */
+}
+
+.main p
+{
+    line-height: 1.5; /* Espaçamento entre as linhas para os parágrafos da seção principal */
+}
+
+abbr { font-variant: small-caps;}
