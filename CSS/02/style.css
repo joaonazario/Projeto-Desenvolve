@@ -1,5 +1,13 @@
-body {
-    background-color: e372f2;
+/* Color Themes in Hex
+    .principal {color: #3df249;}
+    .background {color: ##e372f2;}
+    .fashion3 {color: #f20574;}
+    .fasion4 {color: #f20587;}
+    .principal {color: #76f23d;}
+*/
+
+html {
+    background: #e372f2;
     color: black;
 }
 
