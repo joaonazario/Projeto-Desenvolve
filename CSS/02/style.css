@@ -136,4 +136,40 @@ footer a {
     border: solid 2px #72f283;
     padding: 1em; /* Espaçamento interno do rodapé */
     margin: 4% 0; /* Espaçamento externo no rodapé */
-}   
+} 
+
+/*Exercícios - Posicionamento
+
+O foco dessa atividade será reposicionar os elementos da nossa página!
+1. Defina o elemento .page-wrapper como referência para posicionamento. ok
+2. Faça com que o painel .explanation ocupe 60% da largura disponível, mas crie um
+espaçamento a direita de 35% utilizando margin . ok
+- Adicione uma borda à direita do painel de 1px, com a cor #1f295c . ok
+- Adicione um espaçamento interno de 2% no lado direito do painel. ok
+3. Agora mova o menu de designs para a direita da página, ocupando o espaço em branco
+deixado pelo elemento .explanation.
+- Faça-o iniciar na parte superior da página, após a parte de introdução (por exemplo,
+aplicando top: 560px ).
+- Faça-o iniciar após o elemento .explanation (por exemplo, aplicando left: 62% ).
+- Adicione um espaçamento interno horizontal de 2% no menu para centralizá-lo.
+*/
+
+
+.page-wrapper {
+    position: relative; /* Define o elemento .page-wrapper como referência para posicionamento */
+}
+
+.explanation {
+    width: 60%; /* Ocupa 60% da largura disponível */
+    margin-right: 35%; /* Espaçamento à direita de 35% */
+    border-right: 1px solid #1f295c; /* Borda à direita do painel */
+    padding-right: 2%; /* Espaçamento interno de 2% no lado direito do painel */
+    
+}
+
+#design-selection {
+    position: absolute; /* Mover o menu de designs para a direita da página */
+    top: 560px; /* Iniciar na parte superior da página, após a parte de introdução */
+    left: 62%; /* Iniciar após o elemento .explanation */
+    padding: 0 2%; /* Espaçamento interno horizontal de 2% no menu */
+}
