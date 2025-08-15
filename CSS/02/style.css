@@ -169,7 +169,61 @@ aplicando top: 560px ).
 
 #design-selection {
     position: absolute; /* Mover o menu de designs para a direita da página */
-    top: 560px; /* Iniciar na parte superior da página, após a parte de introdução */
+    top: 400px; /* Iniciar na parte superior da página, após a parte de introdução */
     left: 62%; /* Iniciar após o elemento .explanation */
     padding: 0 2%; /* Espaçamento interno horizontal de 2% no menu */
 }
+
+/*
+    Exercícios - Flexbox
+Na atividade deste capítulo iremos aprimorar o layout de nossa página utilizando o flexbox.
+1. Aplique o flexbox no rodapé da seção principal, e posicione os links de forma que fiquem
+centralizados e com espaçamento entre eles.
+- Defina um mesmo tamanho para os links.
+- Não se esqueça de tratar o caso de quebra de linha.
+2. Configure um layout de flexbox para a seção de benefícios da seguinte forma:
+- O texto deve ficar à esquerda, e o título à direita.
+- O título deve ficar centralizado verticalmente.
+- O texto deve ocupar aproximadamente 70% da largura, e o título 30%.
+3. Configure um layout de flexbox para a seção de participação da seguinte forma:
+- Cada item deve ocupar 50% do espaço disponível.
+- O título deverá ficar centralizado verticalmente.
+4. Inclua uma linha no topo e embaixo das seções de benefícios e participação, utilizando a
+propriedade border-bottom e border-top respectivamente.
+- Remova a ocorrência de borda duplicada entre as duas seções
+*/
+
+.support-footer {
+    display: flex; /* Aplica o flexbox no rodapé da seção principal */
+    justify-content: space-evenly; /* Centraliza os links */
+    
+}
+
+.benefits {
+    display: flex; /* Configura o layout de flexbox para a seção de benefícios */
+    border-top: rgb(72, 255, 0) solid 1px;
+    border-bottom: rgb(72, 255, 0) solid 1px;}
+
+.benefits p {
+    flex-basis: 70%; 
+}
+
+.benefits h3{
+    order: 3;
+    align-self: center;
+    flex-basis: 30%; /* O título ocupa 30% da largura */
+}
+
+.participation {
+    display: flex; /* Configura o layout de flexbox para a seção de participação */
+    flex-wrap: wrap;
+}
+
+.participation h3, .participation p {
+    flex-basis: 50%; /* Cada item ocupa 50% do espaço disponível */
+    align-self: center; /* O título fica centralizado verticalmente */
+}
+.participation h3 {
+    align-self: center; /* Garante que o título fique antes do parágrafo */
+}
+
